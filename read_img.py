@@ -57,4 +57,4 @@ def resd_test(IMG_WIDTH = 256,IMG_HEIGHT = 256,IMG_CHANNELS = 3):
         sizes_test.append([img.shape[0], img.shape[1]])
         img = resize(img, (IMG_HEIGHT, IMG_WIDTH), mode='constant', preserve_range=True)
         X_test[n] = img
-    return X_test
+    return X_test,test_id
