@@ -1,5 +1,7 @@
 
 import tensorflow as tf
+from skimage.morphology import label
+import numpy as np
 
 def rle_encoding(x):
     dots = np.where(x.T.flatten() == 1)[0]
